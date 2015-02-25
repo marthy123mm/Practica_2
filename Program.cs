@@ -11,10 +11,13 @@ namespace Practica2
 			int minutos=0;
 			int segundos=0;
 			
+			
+			
 			for (horas=0; horas <24; horas ++)
 				for(minutos=0;  minutos<60; minutos ++)
 					for(segundos=0; segundos<60; segundos++){
-						Console.WriteLine(horas + " : " + minutos + " : " + segundos);
+				Console.WriteLine("\tCRONOMETRO EN C#\n\n");
+						Console.WriteLine("\t" + horas + " : " + minutos + " : " + segundos);
 						Thread.Sleep(1000);
 						Console.Clear();
 					}
@@ -22,7 +25,7 @@ namespace Practica2
 		}
 		public static void Main(string[] args)
 		{
-			
+			cronometro();
 		}
 	}
 }
