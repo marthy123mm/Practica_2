@@ -40,9 +40,13 @@ namespace Practica2
 		}
 		public static void Main(string[] args)
 		{
-			//cronometro();
-			reloj();
-			Console.ReadKey();
+			int opcion=0;
+			
+			do{
+				Console.WriteLine("\tCRNOMETRO Y RELOJ EN C# \n\n");
+				Console.WriteLine("1)Cronometro\n2)Salir\n3)Salir\n");
+				
+			}while (opcion<3);
 		}
 	}
 }
