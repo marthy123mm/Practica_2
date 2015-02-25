@@ -14,7 +14,7 @@ namespace Practica2
 			for (horas=0; horas <24; horas ++)
 				for(minutos=0;  minutos<60; minutos ++)
 					for(segundos=0; segundos<60; segundos++){
-				Console.WriteLine("\tCRONOMETRO EN C#\n\n");
+						Console.WriteLine("\tCRONOMETRO EN C#\n\n");
 						Console.WriteLine("\t" + horas + " : " + minutos + " : " + segundos);
 						Thread.Sleep(1000);
 						Console.Clear();
@@ -45,6 +45,10 @@ namespace Practica2
 			do{
 				Console.WriteLine("\tCRNOMETRO Y RELOJ EN C# \n\n");
 				Console.WriteLine("1)Cronometro\n2)Salir\n3)Salir\n");
+				Console.WriteLine("Elige una opcion: ");
+				opcion=int.Parse(Console.ReadLine());
+				
+				
 				
 			}while (opcion<3);
 		}
